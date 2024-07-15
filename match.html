@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  
+  <title>Cricket</title>
+ <style> body{
+    text-align: center;
+  }
+  </style>
+  <body>
+</head>
+<body>
+  <div id="ground">
+    <h1>Bat Boll Stump Game</h1>
+
+
+    <button onclick="
+    console.log('You have choosen Bat');
+    let computerChoice=Math.random() *3;
+
+    if(computerChoice >0 && computerChoice <= 1)
+  {
+    computerChoice='Bat';
+  }
+  else if(computerChoice > 1 && computerChoice <=2)
+  {
+  computerChoice='Ball'; 
+ }
+ else{
+    computerChoice='stump';
+ }
+if(computerChoice === 'Ball')
+{
+alert('your choice is Bat and computer choice is Ball , your are thr winner');
+}
+else if(computerChoice === 'stump')
+{
+alert('your choice is Bat and computer choice is stump , Computer is the winner');
+}
+else if(computerChoice === 'Bat')
+{
+alert('your choice is Bat and computer choice is also Bat , the match is tie');
+}">Bat</button>
+
+
+
+    <button onclick="
+    console.log('you have choosen Ball');  
+    computerChoice=Math.random() *3;    
+    
+     if(computerChoice > 0 && computerChoice <=1)
+     {
+      computerChoice='Bat';
+     }
+     else if (computerChoice > 1 && computerChoice <=2)
+     {    
+      computerChoice='Ball';
+     }
+     else {  
+      computerChoice='Stump';
+     }     
+     if(computerChoice ==='Bat')    
+      {
+       alert(`you have choosen ball and computer choise is Bat, computer is winner`);
+      }      
+      else if (computerChoice === 'Stump')
+      {
+        alert (`you have choosen ball and computer choice is Stump ,your are winner`);
+      }
+
+      else
+      {
+       alert(`you have choosen ball and computer choise is also Ball,  match is tie `);
+      }">Ball</button>
+
+
+
+    <button onclick="
+        console.log('you have choosen stump');  
+        computerChoice=Math.random() *3;
+        
+        if(computerChoice > 0 && computerChoice <=1)
+      {
+        computerChoice='Bat';    
+      }
+       else if(computerChoice >1 && computerChoice <=2)
+       {
+        computerChoice='Ball';
+       }
+       else
+       {
+        computerChoice='Stump';
+       }
+       if(computerChoice === 'Bat')
+       {
+        alert('you have choosen stump and computer choise is Bat ,you are the winner');
+       }
+       else if(computerChoice === 'Ball')
+       {
+        alert ('you have choosen Stump and Computer choise is Ball , computer is the winner');
+       }
+       else
+       {
+        alert('you have choosen Stump and computer  choise is also stump , match is tie');
+       }">Stump</button>
+
+  </div>
+  
+</body>
+</html>
